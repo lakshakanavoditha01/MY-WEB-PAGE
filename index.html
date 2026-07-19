@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Gallery & Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo">🎨 Lakshaka Art Studio</div>
+        <nav class="nav-links">
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="cta-btn" onclick="scrollToGallery()">Buy Now</button>
+    </header>
+
+    <!-- Hero / Welcome Section -->
+    <section class="hero">
+        <h1>Welcome to My Creative World</h1>
+        <p>Explore and buy unique, hand-drawn digital and physical artworks.</p>
+    </section>
+
+    <!-- Art Gallery Section (4 Photos) -->
+    <section id="gallery" class="gallery-container">
+        <h2>My Featured Artworks</h2>
+        <div class="art-grid">
+            
+            <!-- Art Item 1 -->
+            <div class="art-card">
+                <img src="lakshaka.jpeg" alt="Art 1" class="art-img">
+                <div class="art-info">
+                    <h3>Art Piece Name 1</h3>
+                    <p class="price">Rs. 5,000</p>
+                    <button class="buy-btn" onclick="buyArt('Art Piece 1')">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Art Item 2 -->
+            <div class="art-card">
+                <img src="lakshaka1.jpeg" alt="Art 2" class="art-img">
+                <div class="art-info">
+                    <h3>Art Piece Name 2</h3>
+                    <p class="price">Rs. 6,500</p>
+                    <button class="buy-btn" onclick="buyArt('Art Piece 2')">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Art Item 3 -->
+            <div class="art-card">
+                <img src="lakshaka2.jpeg" alt="Art 3" class="art-img">
+                <div class="art-info">
+                    <h3>Art Piece Name 3</h3>
+                    <p class="price">Rs. 4,000</p>
+                    <button class="buy-btn" onclick="buyArt('Art Piece 3')">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Art Item 4 -->
+            <div class="art-card">
+                <img src="lakshaka3.jpeg" alt="Art 4" class="art-img">
+                <div class="art-info">
+                    <h3>Art Piece Name 4</h3>
+                    <p class="price">Rs. 7,500</p>
+                    <button class="buy-btn" onclick="buyArt('Art Piece 4')">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Art Studio. All Rights Reserved.</p>
+      
+
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or custom art requests, feel free to reach out!</p>
+    <div class="contact-details">
+        <p>📞 Phone: +94 772216519</p>
+        <p>✉️ Email: lakshakaemail@gmail.com</p>
+        <p>💬 WhatsApp: <a href="https://wa.me/ +94772216519" target="_blank">Chat Now</a></p>
+    </div>
+</section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFE4C4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+.main-header {
+    background-color:#220000 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4757;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4757;
+}
+
+.cta-btn {
+    background-color: #ff4757;
+    color: rgb(24, 6, 83);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e84118;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery-container {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.gallery-container h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-container h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #ff4757;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Art Card Styling */
+.art-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.art-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.art-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.art-info {
+    padding: 20px;
+}
+
+.art-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    width: 100%;
+    background-color: #2d3436;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #ff4757;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d3436;
+    color: white;
+    margin-top: 40px;
+}
+/* Contact Section Styling */
+.contact-section {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #020308;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.contact-details {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.contact-details a {
+    color: #ff4757;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
